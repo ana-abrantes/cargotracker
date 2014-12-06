@@ -124,7 +124,7 @@ public class Cargo implements Serializable {
         Validate.notNull(trackingId, "Tracking ID is required");
         Validate.notNull(routeSpecification, "Route specification is required");
 
-        this.trackingId = trackingId
+        this.trackingId = trackingId;
         // Cargo origin never changes, even if the route specification changes.
         // However, at creation, cargo orgin can be derived from the initial
         // route specification.
